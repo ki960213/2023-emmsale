@@ -2,7 +2,9 @@ name: Kerdy Android CI
 
 on:
   push:
-    branches: [ "android-main", "Feature/test" ]
+    branches:
+      - android-main
+      - Feature/test
   pull_request:
     branches: [ "android-main" ]
 
@@ -22,10 +24,10 @@ jobs:
 
     - name: Change wrapper permissions
       run: chmod +x ./android/2023-emmsale/gradlew
-      
+
     - name: Run ktlintCheck
       run: ./android/2023-emmsale/gradlew -p android/2023-emmsale ktlintCheck
-      
+
     - name: Run detekt
       run: ./android/2023-emmsale/gradlew -p android/2023-emmsale detekt
 
