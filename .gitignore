@@ -25,3 +25,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
