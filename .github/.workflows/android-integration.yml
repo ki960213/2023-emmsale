@@ -2,9 +2,11 @@ name: Kerdy Android CI
 
 on:
   push:
-    branches: [ "Feature/test" ]
+    branches:
+    - android-main
   pull_request:
-    branches: [ "android-main" ]
+    branches:
+    - android-main
 
 jobs:
   build:
