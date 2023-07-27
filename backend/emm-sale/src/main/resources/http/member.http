@@ -5,18 +5,18 @@ Content-Type: application/json
 
 {
   "name": "우르",
-  "careerIds": [
+  "activityIds": [
     1,
     2
   ]
 }
 
 ### 사용자 커리어 추가
-POST http://localhost:8080/members/careers
+POST http://localhost:8080/members/activities
 Content-Type: application/json
 
 {
-  "careerIds": [
+  "activityIds": [
     4,
     5,
     6
@@ -24,11 +24,11 @@ Content-Type: application/json
 }
 
 ### 사용자 커리어 제거
-DELETE http://localhost:8080/members/careers
+DELETE http://localhost:8080/members/activities
 Content-Type: application/json
 
 {
-  "careerIds": [
+  "activityIds": [
     1,
     2
   ]
